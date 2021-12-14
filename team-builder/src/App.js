@@ -36,11 +36,11 @@ function App() {
   return (
     <div className="App">
         <h1>Our Team</h1>
-      <div>
+      <div className='form'>
         <h3>Add a Member</h3>
         <Form values={formValues} update={updateForm} submit={submitForm}/>
       </div>
-      <div>
+      <div className='container'>
         <h3>Our Current Team</h3>
       {
         team.map(member=>{

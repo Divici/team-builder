@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 const Form = props => {
     const { values, update, submit } = props
@@ -18,13 +18,13 @@ const Form = props => {
   return (
     <div>
         <form onSubmit={onSubmit}>
-            <label>
+            <label className='form'>
                 Name: <input name='name' value={values.name} placeholder='Type your username here' maxLength='30' onChange={onInputChange} type='text' />
             </label>
-            <label>
+            <label className='form'>
                 Email: <input name='email' value={values.email} placeholder='Type your email here' maxLength='30' onChange={onInputChange} type='text' />
             </label>
-            <label>
+            <label className='form'>
                 Role: <select name='role' onChange={onInputChange} >
                     <option value=''>--Select a Role--</option>
                     <option value='Fullstack Developer'>Fullstack Developer</option>
@@ -34,7 +34,7 @@ const Form = props => {
                     <option value='Project Manager'>Project Manager</option>
                 </select>
             </label>
-            <div>
+            <div className='form'>
                 <button>submit</button>
             </div>
         </form>
