@@ -7,6 +7,11 @@ function App() {
 
   const [team, setTeam] = useState([]);
 
+  const addTeamMember = (props)=>{
+    const newTeam = team.map(member=> member);
+    newTeam.push({});
+  }
+
   return (
     <div className="App">
       {team}
