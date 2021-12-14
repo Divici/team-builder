@@ -27,11 +27,11 @@ const Form = props => {
             <label>
                 Role: <select name='role' onChange={onInputChange} >
                     <option value=''>--Select a Role--</option>
-                    <option value='fullstack'>Fullstack Developer</option>
-                    <option value='frontend'>Frontend Developer</option>
-                    <option value='backend'>Backend Developer</option>
-                    <option value='uiux'>UI/UX Designer</option>
-                    <option value='projectManager'>Project Manager</option>
+                    <option value='Fullstack Developer'>Fullstack Developer</option>
+                    <option value='Frontend Developer'>Frontend Developer</option>
+                    <option value='Backend Developer'>Backend Developer</option>
+                    <option value='UI/UX Designer'>UI/UX Designer</option>
+                    <option value='Project Manager'>Project Manager</option>
                 </select>
             </label>
             <div>
